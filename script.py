@@ -12,11 +12,12 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    markup = types. ReplyKeyboardMarkup()
-    btn1 = types. KeyboardButton ('Лекейти на сайт', url= 'https://g00/glp.com')
-    markup. row(btn1)
-    btn2 = types. KeyboardButton ('Удалить фото', callback_data='delete')
-    btn3 = types. KeyboardButton ("Изменить лекст', callback_data='edit')
+
+    # markup = types. ReplyKeyboardMarkup()
+    # btn1 = types. KeyboardButton ('Лекейти на сайт', url= 'https://g00/glp.com')
+    # markup. row(btn1)
+    # btn2 = types. KeyboardButton ('Удалить фото', callback_data='delete')
+    # btn3 = types. KeyboardButton ("Изменить лекст', callback_data='edit')
 
 
-            bot.infinity_polling()
+bot.infinity_polling()
